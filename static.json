@@ -1,5 +1,7 @@
 {
     "headers": {
-        "X-Author": "hessian"
+        "*/": {
+            "X-Author": "hessian"
+        }
     }
 }
