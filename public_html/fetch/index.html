@@ -16,7 +16,7 @@
             fetch(x)
                 .then((response) => {
                     console.log('fetch ok:', response);
-                    return response.text();
+                    return response;
                 })
                 .then((data) => {
                     inp.value = data;
