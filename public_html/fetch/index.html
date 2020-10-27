@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <script>
-        window.onload(() => {
+        window.onload = () => {
             const bt = document.getElementById('bt');
         console.log(bt);
         const inp = document.getElementById('inp');
@@ -21,7 +21,7 @@
                     console.log('something went wrong, suddenly:', e);
                 });
             });
-        });
+        };
     </script>
 </head>
 <body>
