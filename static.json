@@ -4,12 +4,15 @@
             "Access-Control-Allow-Origin": "*",
             "X-Author": "hessian"
         },
+        "/fetch/": {
+        },
         "/login/": {
-            "Access-Control-Allow-Origin": "*",
             "Content-Type": "text/plain; charset=UTF-8"
         },
+        "/promise/": {
+            "Content-Type":"text/plain; charset=UTF-8"
+        },
         "/sample/": {
-            "Access-Control-Allow-Origin": "*",
             "Content-Type": "text/plain; charset=UTF-8"
         }
     }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        const bt = document.getElementById('bt');
+        const inp = document.getElementById('inp');
+        bt.on('click', (x = inp.value) => {
+            fetch(x)
+                .then((response) => {
+                    inp.value = response.text;
+                    console.log('it`s all right:', response);
+                })
+                .catch((e) => {
+                    console.log('something went wrong, suddenly:', e);
+                });
+        });
+    </script>
+</head>
+<body>
+    <input id="inp" type="text">
+    <button id="bt">button</button>
+</body>
+</html>
