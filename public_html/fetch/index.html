@@ -10,7 +10,8 @@
         console.log(bt);
         const inp = document.getElementById('inp');
         console.log(inp);
-        bt.onclick = (x = inp.value) => {
+        bt.onclick = () => {
+            const x = inp.value;
             console.log(x);
             fetch(x)
                 .then((response) => {
